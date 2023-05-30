@@ -19,8 +19,9 @@
 <!-- header section starts  -->
 
 <header class="header">
-    <img src="image/new0/logoab.png" alt="">
-    <a href="home.html" class="logo"> </i> </a>
+    <a href="home.html">
+        <img src="image/new0/logoab.png" alt="Clickable Image">
+    </a>
 </header>
 
 <section class="credit"> CHECKOUT | Akunbareng </section>
@@ -51,7 +52,7 @@
                 <div class="info">
                     <img src="image/bayar/buy4.png" alt="">
                     <div class="content">
-                        <h3>No Rek : 1710001957003  <button onclick="copyText1()">  <i class="far fa-clone"></i></button> </h3>
+                        <h3>No Rek : 1710001957003  <button onclick="copyText1()">  <a class="far fa-clone"></a></button> </h3>
                         <span>a.n Andreas Kurnia Ferdiantoro</span>
                     </div>
                 </div>
@@ -87,9 +88,8 @@
         </form>
 
         </div>
-        <input type="submit" value="Konfirmasi Pembayaran" class="btn">
 
-        <button onclick="sendWhatsAppMessages()" class="btn">Konfirmasi Pembayaran Sekarang</button>
+        <button onclick="sendWhatsAppMessages()" class="btn">Konfirmasi Pembayaran</button>
 
     <script>
         function sendWhatsAppMessages() {
