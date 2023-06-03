@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission to WhatsApp</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        .input-field {
+            margin-bottom: 10px;
+        }
+
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form Submission to WhatsApp</h1>
+        <form onsubmit="sendWhatsAppMessage(event)">
+            <div class="input-field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-field">
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+            </div>
+
+            <button class="submit-button" type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <script>
+        function sendWhatsAppMessage(event) {
+            event.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+
+            var phoneNumber = "085812358172"; // Replace with your WhatsApp number
+            var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent("Name: " + name + "\nMessage: " + message);
+
+            window.location.href = whatsappURL;
+        }
+    </script>
+</body>
+</html>
