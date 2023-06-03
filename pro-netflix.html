@@ -46,16 +46,8 @@
     <h3>Rp. 50.000/Bulan</h3>
 
     <div class="row">
-
-        <form action="">
-            <h3>Informasi Pengguna</h3>
-            <div class="inputBox">
-                <input type="text" placeholder="Nama Lengkap" class="box" id="nama">
-                <input type="number" placeholder="Nomor WA" class="box" id="no">
-                <input type="email" placeholder="Email" class="box" id="email">
-            </div>
-            <a href="co-netflix.html" class="btn">Order Now</a>
-
+ 
+        <body>
             <div class="container">
                 <h1>Form Submission to Random WhatsApp Numbers</h1>
                 <form onsubmit="sendWhatsAppMessage(event)">
@@ -66,7 +58,7 @@
         
                     <div class="input-field">
                         <label for="number">Nomor Whatsapp :</label>
-                        <input type="text" placeholder="Nomor WA" class="box" id="number" required>
+                        <input type="text" placeholder="Nomor Whatsapp" class="box" id="number" required>
                     </div>
         
                     <div class="input-field">
@@ -74,7 +66,7 @@
                         <input type="email" placeholder="Email" class="box" id="email" required>
                     </div>
         
-                    <button class="submit-button" type="submit">Send Message</button>
+                    <button class="btn submit-button" type="submit">Send Message</button>
                 </form>
             </div>
         
@@ -96,9 +88,17 @@
                     window.location.href = whatsappURL;
                 }
             </script>
+        </body>
 
+        <form action="">
+            <h3>Informasi Pengguna</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Nama Lengkap" class="box" id="nama">
+                <input type="number" placeholder="Nomor WA" class="box" id="no">
+                <input type="email" placeholder="Email" class="box" id="email">
+            </div>
+            <a href="co-netflix.html" class="btn">Order Now</a>            
         </form>
-        
     </div>
         </div>
 
