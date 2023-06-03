@@ -55,44 +55,50 @@
                 <input type="email" placeholder="Email" class="box" id="email">
             </div>
             <a href="co-netflix.html" class="btn">Order Now</a>
-        </form>
 
-    <form action="">
-        <div class="container">
-            <h1>Form Submission to Random WhatsApp Numbers</h1>
-            <form onsubmit="sendWhatsAppMessage(event)">
-                <div class="inputBox">
-                    <label for="name" > </label>
-                    <input type="text" placeholder="Nama Lengkap" class="box" id="name" required>
-                    <label for="number"> </label>
-                    <input type="text" placeholder="Nomor WA" class="box" id="number" required>
-                    <label for="email"></label>
-                    <input type="email" placeholder="Email" class="box" id="email" required>
-                </div>
-    
-                <button class="btn submit-button" type="submit">Send Message</button>
-            </form>
-        </div>
-    
-        <script>
-            function sendWhatsAppMessage(event) {
-                event.preventDefault();
-    
-                var name = document.getElementById("name").value;
-                var number = document.getElementById("number").value;
-                var email = document.getElementById("email").value;
-    
-                var phoneNumber1 = "6285812358172"; // Replace with your WhatsApp number 1
-                var phoneNumber2 = "6289514206590"; // Replace with your WhatsApp number 2
-    
-                var randomPhoneNumber = Math.random() < 0.5 ? phoneNumber1 : phoneNumber2;
-    
-                var whatsappURL = "https://api.whatsapp.com/send?phone=" + randomPhoneNumber + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan paket streaming..." + "\n" + "\nNama: " + name + "\nNomor Whatsapp: " + number + "\nEmail: " + email + "\n" + "\nTerima Kasih");
-    
-                window.location.href = whatsappURL;
-            }
-        </script>
-</form>
+            <div class="container">
+                <h1>Form Submission to Random WhatsApp Numbers</h1>
+                <form onsubmit="sendWhatsAppMessage(event)">
+                    <div class="input-field">
+                        <label for="name">Name :</label>
+                        <input type="text" placeholder="Nama Lengkap" class="box" id="name" required>
+                    </div>
+        
+                    <div class="input-field">
+                        <label for="number">Nomor Whatsapp :</label>
+                        <input type="text" placeholder="Nomor WA" class="box" id="number" required>
+                    </div>
+        
+                    <div class="input-field">
+                        <label for="email">Email :</label>
+                        <input type="email" placeholder="Email" class="box" id="email" required>
+                    </div>
+        
+                    <button class="submit-button" type="submit">Send Message</button>
+                </form>
+            </div>
+        
+            <script>
+                function sendWhatsAppMessage(event) {
+                    event.preventDefault();
+        
+                    var name = document.getElementById("name").value;
+                    var number = document.getElementById("number").value;
+                    var email = document.getElementById("email").value;
+        
+                    var phoneNumber1 = "6285812358172"; // Replace with your WhatsApp number 1
+                    var phoneNumber2 = "6289514206590"; // Replace with your WhatsApp number 2
+        
+                    var randomPhoneNumber = Math.random() < 0.5 ? phoneNumber1 : phoneNumber2;
+        
+                    var whatsappURL = "https://api.whatsapp.com/send?phone=" + randomPhoneNumber + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan paket streaming..." + "\n" + "\nNama: " + name + "\nNomor Whatsapp: " + number + "\nEmail: " + email + "\n" + "\nTerima Kasih");
+        
+                    window.location.href = whatsappURL;
+                }
+            </script>
+
+        </form>
+        
     </div>
         </div>
 
