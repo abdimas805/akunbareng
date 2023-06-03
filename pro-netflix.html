@@ -57,7 +57,7 @@
                         <input type="email" placeholder="Email" class="box" id="email" required>
                     </div>
         
-                    <button href="co-netflix.html" class="btn submit-button" type="submit">Order Now</button>
+                    <button class="btn submit-button" type="submit">Order Now</button>
                 </form>
         
             <script>
@@ -75,7 +75,8 @@
         
                     var whatsappURL = "https://api.whatsapp.com/send?phone=" + randomPhoneNumber + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan paket streaming..." + "\n" + "\nNama: " + name + "\nNomor Whatsapp: " + number + "\nEmail: " + email + "\n" + "\nTerima Kasih");
         
-                    window.location.href = whatsappURL;
+                    window.open(whatsappURL, "_blank");
+                    window.location.href = "co-netflix.html";
                 }
             </script>
         </body>
