@@ -48,24 +48,31 @@
     <div class="row">
 
         <form action="">
-            <div class="container">
-                <h1>Form Submission to Random WhatsApp Numbers</h1>
-                <form onsubmit="sendWhatsAppMessage(event)">
-                    <div class="inputBox">
-                        <label for="name" > </label>
-                        <input type="text" placeholder="Nama Lengkap" class="box" id="name" required>
-                        <label for="number"> </label>
-                        <input type="text" placeholder="Nomor WA" class="box" id="number" required>
-                        <label for="email"> </label>
-                        <input type="email" placeholder="Email" class="box" id="email" required>
-                    </div>
-        
-                    <button href="co-netflix.html" class="btn" type="submit">Send Message</button>
-                </form>
+            <h3>Informasi Pengguna</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Nama Lengkap" class="box" id="nama">
+                <input type="number" placeholder="Nomor WA" class="box" id="no">
+                <input type="email" placeholder="Email" class="box" id="email">
             </div>
+            <a href="co-netflix.html" class="btn">Order Now</a>
         </form>
 
-        
+    <form action="">
+        <div class="container">
+            <h1>Form Submission to Random WhatsApp Numbers</h1>
+            <form onsubmit="sendWhatsAppMessage(event)">
+                <div class="inputBox">
+                    <label for="name" > </label>
+                    <input type="text" placeholder="Nama Lengkap" class="box" id="name" required>
+                    <label for="number"> </label>
+                    <input type="text" placeholder="Nomor WA" class="box" id="number" required>
+                    <label for="email"></label>
+                    <input type="email" placeholder="Email" class="box" id="email" required>
+                </div>
+    
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
     
         <script>
             function sendWhatsAppMessage(event) {
@@ -85,7 +92,7 @@
                 window.location.href = whatsappURL;
             }
         </script>
-
+</form>
     </div>
         </div>
 
