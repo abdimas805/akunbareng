@@ -66,7 +66,7 @@
 
             var randomPhoneNumber = Math.random() < 0.5 ? phoneNumber1 : phoneNumber2;
 
-            var whatsappURL = "https://api.whatsapp.com/send?phone=" + randomPhoneNumber + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan paket streaming..." + "\nNama: " + name + "\nNomor Whatsapp: " + number + "\nEmail: " + email + "\nTerima Kasih");
+            var whatsappURL = "https://api.whatsapp.com/send?phone=" + randomPhoneNumber + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\n" + "\nSaya Ingin Berlangganan paket streaming..." + "\n" + "\nNama: " + name + "\nNomor Whatsapp: " + number + "\nEmail: " + email + "\n" + "\nTerima Kasih");
 
             window.location.href = whatsappURL;
         }
