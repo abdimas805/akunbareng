@@ -106,9 +106,9 @@
                 var whatsappURL;
     
                 if (randomNumber < 0.5) {
-                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan paket streaming..." + "\n" + "\nName: " + formData.name + "\nEmail: " + formData.number + "\nMessage: " + formData.email + "\n" + "\nTerima Kasih");
+                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *HBO GO*, Berikut adalah data diri saya :" + "\n" + "\nName : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *HBO GO*" + "\nTotal Bayar : *Rp. 45.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
                 } else {
-                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber2 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan paket streaming..." + "\n" + "\nName: " + formData.name + "\nEmail: " + formData.number + "\nMessage: " + formData.email + "\n" + "\nTerima Kasih");
+                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber2 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *HBO GO*, Berikut adalah data diri saya :" + "\n" + "\nName : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *HBO GO*" + "\nTotal Bayar : *Rp. 45.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
                 }
     
                 window.open(whatsappURL, "_blank");
