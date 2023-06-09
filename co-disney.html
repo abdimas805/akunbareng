@@ -29,10 +29,10 @@
 <section class="about">
 
     <div class="content">
-        <span>Checkout Pesanan</span>
-        <h3>Name           : <span id="name"></span></h3>
-        <h3>Nomor WhatsApp : <span id="number"></span></h3>
-        <h3>Email          : <span id="email"></span></h3>
+        <h3>Detail Customer</h3>
+        <h1 id="name"></h1>
+        <h1 id="number"></h1>
+        <h1 id="email"></h1>
         <p>Silahkan selesaikan pembayaran terlebih dahulu sesuai dengan tagihan berlangganan kamu. Dan setelah selesai melakukan pembayaran harap langsung klik Konfirmasi Pembayaran. TERIMA KASIH!! </p>
     </div>
 
@@ -106,9 +106,9 @@
                 var whatsappURL;
     
                 if (randomNumber < 0.5) {
-                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *Disney*, Berikut adalah data diri saya :" + "\n" + "\nName : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *Disney*" + "\nTotal Bayar : *Rp. 35.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
+                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *Disney+ Hotstar*, Berikut adalah data diri saya :" + "\n" + "\nName : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *Disney+ Hotstar*" + "\nTotal Bayar : *Rp. 35.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
                 } else {
-                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber2 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *Disney*, Berikut adalah data diri saya :" + "\n" + "\nName : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *Disney*" + "\nTotal Bayar : *Rp. 35.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
+                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber2 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *Disney+ Hotstar*, Berikut adalah data diri saya :" + "\n" + "\nName : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *Disney+ Hotstar*" + "\nTotal Bayar : *Rp. 35.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
                 }
     
                 window.open(whatsappURL, "_blank");
