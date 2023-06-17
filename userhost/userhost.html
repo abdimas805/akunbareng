@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="image/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Akunbareng</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+    <a href="../index.html">
+        <img src="image/logoab.png" alt="Clickable Image">
+    </a>
+</header>
+
+<section class="credit"> CHECKOUT | Akunbareng </section>
+<!-- header section ends -->
+<section class="about">
+
+</section>
+
+
+<section class="contact">
+    
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-user-circle"></i>
+            <h3>Progam User Host Akunbareng</h3>
+    <p>Program kerjasama antara Akunbarengstore dengan Customer.</p>
+    <p>Dimana customer dapat membayar sendiri akun netflixnya dan AkunBarengStore akan mencarikan teman patungan dalam berlangganan netflix.</p>
+
+    <div class="image">
+        <img src="image/profile1.png" alt="">
+    </div>
+
+    <h3>Keuntungan Program Userhost</h3>
+    <p>1. Harga Langganan Lebih murah</p>
+    <p>2. tidak perlu ganti akun tiap bulan</p>
+    <p>3. Proses lebih cepat dan mudah</p>
+
+    <h3>Cara mengikuti program user Host</h3>
+    <p>1. Customer melakukan pendaftaran akun</p>
+    <p>2. Customer melakukan pembayaran melalui gopay/Dana/Kartu Debit</p>
+    <p>3. Setelah pembayaran Berhasil Admin akan mengganti biaya berlangganan</p>
+    <p>4. AkunBarengStore akan mencarikan teman patungan</p>
+    
+    <h3>Apakah ini Aman ?</h3>
+    <p>Dijamin 100% aman, karena kamu sendiri yang melakukan pembayaran ke pihak netflix.</p>
+    <p>Kami tidak akan meminta info seperti PIN, OTP dan kartu kredit atau data e-wallet yang digunakan untuk membayar akun.</p>
+    
+    <div class="image">
+        <img src="image/cuma1.png" alt="">
+    </div>
+
+    <p>Jadi sama seperti anda membeli paket Premium sendiri dan meminta tolong kami untuk mencarikan teman patungan.</p>
+    <p>Kami tidak akan mengetahui informasi pembayaran yang anda gunakan.</p>
+    
+    <script>
+        function sendWhatsAppMessage() {
+            var phoneNumber1 = "6285784703817"; // Replace with your WhatsApp number 1
+            var phoneNumber2 = "6281515190070"; // Replace with your WhatsApp number 2
+            
+            var randomNumber = Math.random(); // Generate a random number between 0 and 1
+
+            var whatsappURL;
+
+            if (randomNumber < 0.5) {
+                whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Hallo Akunbarengstore! Saya mau Langganan Program Userhost dong.");
+            } else {
+                whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber2 + "&text=" + encodeURIComponent("Hallo Akunbarengstore! Saya mau Langganan Program Userhost dong.");
+            }
+
+            window.open(whatsappURL, "_blank");
+        }
+    </script>
+</head>
+<body>
+    <button class="btn submit-button" onclick="sendWhatsAppMessage()">Hubungi Admin Sekarang !!!</button>
+</body>
+        </div>
+
+    </div>
+    
+</section>
+
+
+<!-- footer section starts  -->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Kunjungi Semua Media Kami</h3>
+            <a href="https://akunbarengstore.com/"> <i class="fab fa-chrome"></i> Website </a>
+            <a href="https://instagram.com/akunbarengstore?igshid=YmMyMTA2M2Y="> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.tiktok.com/@antigabutstore?_t=8bXolfasZU1&_r=1"> <i class="fab fa-tiktok"></i> Tiktok </a>
+            <a href="https://freewebsitecode.com/"> <i class="fab fa-whatsapp"></i> Kontak Admin 1</a>
+            <a href="https://freewebsitecode.com/"> <i class="fab fa-whatsapp"></i> Kontak Admin 2</a>
+        </div>
+
+        <div class="box">
+            <h3>Akunbarengstore</h3>
+            <a href="https://akunbarengstore.com/"> <i class="fab fa-chrome"></i> Tentang Kami </a>
+            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Cara Pesan </a>
+            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Syarat dan Ketentuan </a>
+            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Kebijakan Privasi</a>
+            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Laporan Kendala</a>
+            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Karir</a>
+        </div>
+
+        <div class="box">
+            <h3>Tentang Akunbarengstore</h3>
+            <p>Platform yang memberikan kamu kemudahan untuk berlangganan layanan premium seperti Netlfix, YouTube, Spotify dll dengan cara patungan yang membuat harga lebih murah namun tetap aman dan legal</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">created by <a href="https://instagram.com/abdimas_aja?igshid=YmMyMTA2M2Y="> abdimas_aja </a> | AkunBarengStore © 2023 All right reserved.</section>
+
+<!-- footer section ends -->
+
+
+<!-- custom css file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
