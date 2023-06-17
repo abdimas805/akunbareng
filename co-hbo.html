@@ -19,7 +19,7 @@
 <!-- header section starts  -->
 
 <header class="header">
-    <a href="home.html">
+    <a href="index.html">
         <img src="image/new0/logoab.png" alt="Clickable Image">
     </a>
 </header>
@@ -94,73 +94,73 @@
 
         <button onclick="sendWhatsAppMessages()" class="btn">Konfirmasi Pembayaran</button>
 
-        <script>
-            function sendWhatsAppMessages() {
-                var formData = JSON.parse(localStorage.getItem("formData"));
-    
-                var phoneNumber1 = "6289514206590"; // Replace with your WhatsApp number 1
-                var phoneNumber2 = "6285812358172"; // Replace with your WhatsApp number 2
-    
-                var randomNumber = Math.random(); // Generate a random number between 0 and 1
-    
-                var whatsappURL;
-    
-                if (randomNumber < 0.5) {
-                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *HBO GO*, Berikut adalah data diri saya :" + "\n" + "\nNama : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *HBO GO*" + "\nTotal Bayar : *Rp. 45.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
+                <script>
+                    function sendWhatsAppMessages() {
+                        var formData = JSON.parse(localStorage.getItem("formData"));
+            
+                        var phoneNumber1 = "6285784703817"; // Replace with your WhatsApp number 1
+                        var phoneNumber2 = "6281515190070"; // Replace with your WhatsApp number 2
+            
+                        var randomNumber = Math.random(); // Generate a random number between 0 and 1
+            
+                        var whatsappURL;
+            
+                        if (randomNumber < 0.5) {
+                            whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber1 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *Canva Pro*, Berikut adalah data diri saya :" + "\n" + "\nNama : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *Canva Pro*" + "\nTotal Bayar : *Rp. 50.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
                 } else {
-                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber2 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *HBO GO*, Berikut adalah data diri saya :" + "\n" + "\nNama : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *HBO GO*" + "\nTotal Bayar : *Rp. 45.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
-                }
-    
-                window.open(whatsappURL, "_blank");
-            }
-    
-            // Display the form data on the page
-            var formData = JSON.parse(localStorage.getItem("formData"));
-            document.getElementById("name").textContent = formData.name;
-            document.getElementById("number").textContent = formData.number;
-            document.getElementById("email").textContent = formData.email;
-        </script>
-
-        </div>
-    </div>
-</section>
-
-</section>
-
-
-
-<!-- footer section starts  -->
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>Kunjungi Semua Media Kami</h3>
-            <a href="https://akunbarengstore.com/"> <i class="fab fa-chrome"></i> Website </a>
-            <a href="https://instagram.com/akunbarengstore?igshid=YmMyMTA2M2Y="> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="https://www.tiktok.com/@antigabutstore?_t=8bXolfasZU1&_r=1"> <i class="fab fa-tiktok"></i> Tiktok </a>
-            <a href="https://freewebsitecode.com/"> <i class="fab fa-whatsapp"></i> Kontak Admin 1</a>
-            <a href="https://freewebsitecode.com/"> <i class="fab fa-whatsapp"></i> Kontak Admin 2</a>
-        </div>
-
-        <div class="box">
-            <h3>Akunbarengstore</h3>
-            <a href="https://akunbarengstore.com/"> <i class="fab fa-chrome"></i> Tentang Kami </a>
-            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Cara Pesan </a>
-            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Syarat dan Ketentuan </a>
-            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Kebijakan Privasi</a>
-            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Laporan Kendala</a>
-            <a href="https://akunbarengstore.com/ketentuan"> <i class="fab fa-chrome"></i> Karir</a>
-        </div>
-
-        <div class="box">
-            <h3>Tentang Akunbarengstore</h3>
-            <p>Platform yang memberikan kamu kemudahan untuk berlangganan layanan premium seperti Netlfix, YouTube, Spotify dll dengan cara patungan yang membuat harga lebih murah namun tetap aman dan legal</p>
-        </div>
-
-    </div>
-
-</section>
+                    whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber2 + "&text=" + encodeURIComponent("Halo Akunbarengstore!" + "\nSaya Ingin Berlangganan *Canva Pro*, Berikut adalah data diri saya :" + "\n" + "\nNama : " + formData.name + "\nNomor WhatsApp : " + formData.number + "\nEmail : " + formData.email + "\n" + "\nLangganan : *Canva Pro*" + "\nTotal Bayar : *Rp. 50.000,-/Bulan*" + "\n" + "\nDan untuk bukti transfernya akan segera saya kirim." + "\nTerima Kasih");
+                        }
+            
+                        window.open(whatsappURL, "_blank");
+                    }
+            
+                    // Display the form data on the page
+                    var formData = JSON.parse(localStorage.getItem("formData"));
+                    document.getElementById("name").textContent = formData.name;
+                    document.getElementById("number").textContent = formData.number;
+                    document.getElementById("email").textContent = formData.email;
+                </script>
+        
+                </div>
+            </div>
+        </section>
+        
+        </section>
+        
+        
+        
+        <!-- footer section starts  -->
+        <section class="footer">
+        
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>Kunjungi Semua Media Kami</h3>
+                    <a href="https://akunbarengstore.com/"> <i class="fab fa-chrome"></i> Website </a>
+                    <a href="https://instagram.com/akunbarengstore?igshid=YmMyMTA2M2Y="> <i class="fab fa-instagram"></i> instagram </a>
+                    <a href="https://www.tiktok.com/@antigabutstore?_t=8bXolfasZU1&_r=1"> <i class="fab fa-tiktok"></i> Tiktok </a>
+                    <a href="https://api.whatsapp.com/send?phone=6285784703817"> <i class="fab fa-whatsapp"></i> Kontak Admin 1</a>
+                    <a href="https://api.whatsapp.com/send?phone=6281515190070"> <i class="fab fa-whatsapp"></i> Kontak Admin 2</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Akunbarengstore</h3>
+                    <a href="https://akunbarengstore.com/"> <i class="fab fa-chrome"></i> Tentang Kami </a>
+                    <a href="https://akunbarengstore.com"> <i class="fab fa-chrome"></i> Cara Pesan </a>
+                    <a href="https://akunbarengstore.com"> <i class="fab fa-chrome"></i> Syarat dan Ketentuan </a>
+                    <a href="https://akunbarengstore.com"> <i class="fab fa-chrome"></i> Kebijakan Privasi</a>
+                    <a href="https://akunbarengstore.com"> <i class="fab fa-chrome"></i> Laporan Kendala</a>
+                    <a href="https://akunbarengstore.com"> <i class="fab fa-chrome"></i> Karir</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Tentang Akunbarengstore</h3>
+                    <p>Platform yang memberikan kamu kemudahan untuk berlangganan layanan premium seperti Netlfix, YouTube, Spotify dll dengan cara patungan yang membuat harga lebih murah namun tetap aman dan legal</p>
+                </div>
+        
+            </div>
+        
+        </section>
 
 <section class="credit">created by <a href="https://instagram.com/abdimas_aja?igshid=YmMyMTA2M2Y="> abdimas_aja </a> | AkunBarengStore © 2023 All right reserved.</section>
 
